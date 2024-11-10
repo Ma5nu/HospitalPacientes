@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.io.FileNotFoundException;
 
 public class RepositorioPaciente {
-    // Declaração do ArrayList onde salvo as informações e modificações
+    // Declaração do ArrayList onde salvo as informações e modificações TT__TT
     private ArrayList<Paciente> pacientes = new ArrayList<>();
     private final String arquivoPaciente = "pacientes.txt";
 
