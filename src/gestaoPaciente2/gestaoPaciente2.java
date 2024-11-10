@@ -2,10 +2,11 @@ package gestaoPaciente2;
 
 import java.util.Scanner;
 
+// Onde ocorre a interação com o usuário 
 public class gestaoPaciente2 {
     public static void main(String[] args) {
         RepositorioPaciente repositorio = new RepositorioPaciente();
-        repositorio.carregarPacientes(); // Carrega os pacientes do arquivo
+        repositorio.carregarPacientes();
         Scanner leitor = new Scanner(System.in);
         int opcao;
         do {
@@ -23,7 +24,7 @@ public class gestaoPaciente2 {
                 case 1:
                     System.out.print("ID: ");
                     int id = leitor.nextInt();
-                    leitor.nextLine(); // Consome a nova linha
+                    leitor.nextLine(); 
                     System.out.print("Nome: ");
                     String nome = leitor.nextLine();
                     System.out.print("Peso: ");
@@ -64,7 +65,7 @@ public class gestaoPaciente2 {
                     break;
                 case 5:
                     System.out.println("Salvando pacientes e saindo...");
-                    repositorio.salvarPacientes(); // Salva os pacientes no arquivo antes de sair
+                    repositorio.salvarPacientes(); // Salva os pacientes no arquivo antes de sair no txt.
                     break;
                 case 6:
                     System.out.println("Encerrando o Programa...");
@@ -74,6 +75,6 @@ public class gestaoPaciente2 {
                     break;
             }
         } while (opcao != 6);
-        leitor.close(); // Fecha o scanner ao final do programa
+        leitor.close(); 
     }
 }
