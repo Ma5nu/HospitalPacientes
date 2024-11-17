@@ -1,9 +1,6 @@
 package gestaoPaciente2;
+ //Classe Paciente
 
-/**
- * Classe Paciente
- * @author adm
- */
 public class Paciente {
     private int id;
     private String nome;
