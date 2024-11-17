@@ -1,12 +1,7 @@
 package gestaoPaciente2;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
-import java.io.FileNotFoundException;
 
 public class RepositorioPaciente {
     // Declaração do ArrayList onde salvo as informações e modificações TT__TT
