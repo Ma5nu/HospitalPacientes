@@ -1,5 +1,4 @@
 package gestaoPaciente2;
-
 import java.util.Scanner;
 
 // Onde ocorre a interação com o usuário 
