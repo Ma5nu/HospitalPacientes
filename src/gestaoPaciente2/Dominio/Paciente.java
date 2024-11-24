@@ -1,9 +1,10 @@
+<<<<<<< HEAD:src/gestaoPaciente2/Dominio/Paciente.java
 package gestaoPaciente2.Dominio;
+=======
+package gestaoPaciente2;
+ //Classe Paciente
+>>>>>>> f254077a818dc8d3b1ca8ed1fd8d987058694ff4:src/gestaoPaciente2/Paciente.java
 
-/**
- * Classe Paciente
- * @author adm
- */
 public class Paciente {
     private int id;
     private String nome;
@@ -11,7 +12,7 @@ public class Paciente {
     private double altura;
     private char sexo;
 
-    // Construtor
+    // Construtor :p
     public Paciente(int id, String nome, double peso, double altura, char sexo) {
         this.id = id;
         this.nome = nome;
@@ -20,7 +21,7 @@ public class Paciente {
         this.sexo = sexo;
     }
 
-    // Métodos de acesso e modificação
+    // Apenas para me lembrar, métodos de acesso e modificação
     public int getId() {
         return id;
     }

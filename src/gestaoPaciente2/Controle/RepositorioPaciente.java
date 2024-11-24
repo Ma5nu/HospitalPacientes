@@ -1,10 +1,17 @@
+<<<<<<< HEAD:src/gestaoPaciente2/Controle/RepositorioPaciente.java
 package gestaoPaciente2.Controle;
 import gestaoPaciente2.Dominio.Paciente;
 import java.util.ArrayList;
 import java.io.*;
+=======
+package gestaoPaciente2;
+
+import java.io.*;
+import java.util.ArrayList;
+>>>>>>> f254077a818dc8d3b1ca8ed1fd8d987058694ff4:src/gestaoPaciente2/RepositorioPaciente.java
 
 public class RepositorioPaciente {
-    // Declaração do ArrayList onde salvo as informações e modificações
+    // Declaração do ArrayList onde salvo as informações e modificações TT__TT
     private ArrayList<Paciente> pacientes = new ArrayList<>();
     private final String arquivoPaciente = "pacientes.txt";
 
