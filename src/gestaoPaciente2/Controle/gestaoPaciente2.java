@@ -1,5 +1,7 @@
-package gestaoPaciente2;
+package gestaoPaciente2.Controle;
 
+import gestaoPaciente2.Controle.RepositorioPaciente;
+import gestaoPaciente2.Dominio.Paciente;
 import java.util.Scanner;
 
 public class gestaoPaciente2 {

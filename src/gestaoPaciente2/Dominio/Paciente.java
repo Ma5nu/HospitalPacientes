@@ -1,4 +1,4 @@
-package gestaoPaciente2;
+package gestaoPaciente2.Dominio;
 
 /**
  * Classe Paciente

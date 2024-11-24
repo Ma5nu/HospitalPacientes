@@ -1,12 +1,7 @@
-package gestaoPaciente2;
-
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+package gestaoPaciente2.Controle;
+import gestaoPaciente2.Dominio.Paciente;
 import java.util.ArrayList;
-import java.io.FileNotFoundException;
+import java.io.*;
 
 public class RepositorioPaciente {
     // Declaração do ArrayList onde salvo as informações e modificações
@@ -45,6 +40,10 @@ public class RepositorioPaciente {
     // Método para salvar pacientes no arquivo
     public void salvarPacientes() { // Tornar público
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(arquivoPaciente))) {
+            
+            
+            //caminho do arquivo salvo
+            System.out.println("Salvando arquivo em: " + new java.io.File(arquivoPaciente).getAbsolutePath());           
             for (Paciente paciente : pacientes) {
                 writer.write(paciente.getId() + ";" + paciente.getNome() + ";" + 
                             paciente.getPeso() + ";" + paciente.getAltura() + ";" + 
