@@ -1,9 +1,4 @@
-<<<<<<< HEAD:src/gestaoPaciente2/Dominio/Paciente.java
 package gestaoPaciente2.Dominio;
-=======
-package gestaoPaciente2;
- //Classe Paciente
->>>>>>> f254077a818dc8d3b1ca8ed1fd8d987058694ff4:src/gestaoPaciente2/Paciente.java
 
 public class Paciente {
     private int id;
@@ -21,7 +16,6 @@ public class Paciente {
         this.sexo = sexo;
     }
 
-    // Apenas para me lembrar, métodos de acesso e modificação
     public int getId() {
         return id;
     }
@@ -69,7 +63,7 @@ public class Paciente {
                 ", nome='" + nome + '\'' +
                 ", peso=" + peso +
                 ", altura=" + altura +
-                ", sexo=" + (sexo == 'M' || sexo == 'F' ? "Masculino" : "Feminino") +
+                ", sexo=" + (sexo == 'M' ? "Masculino" : "Feminino") +
                 '}';
     }
 }

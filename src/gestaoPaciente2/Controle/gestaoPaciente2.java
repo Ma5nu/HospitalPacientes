@@ -1,20 +1,17 @@
-<<<<<<< HEAD:src/gestaoPaciente2/Controle/gestaoPaciente2.java
 package gestaoPaciente2.Controle;
 
-import gestaoPaciente2.Controle.RepositorioPaciente;
 import gestaoPaciente2.Dominio.Paciente;
-=======
-package gestaoPaciente2;
->>>>>>> f254077a818dc8d3b1ca8ed1fd8d987058694ff4:src/gestaoPaciente2/gestaoPaciente2.java
 import java.util.Scanner;
 
-// Onde ocorre a interação com o usuário 
 public class gestaoPaciente2 {
+
+    // Onde ocorre a interação com o usuário
     public static void main(String[] args) {
         RepositorioPaciente repositorio = new RepositorioPaciente();
         repositorio.carregarPacientes();
         Scanner leitor = new Scanner(System.in);
         int opcao;
+
         do {
             System.out.println("\nSistema de Gerenciamento de Paciente\n");
             System.out.println("1. Adicionar Paciente");
@@ -30,7 +27,7 @@ public class gestaoPaciente2 {
                 case 1:
                     System.out.print("ID: ");
                     int id = leitor.nextInt();
-                    leitor.nextLine(); 
+                    leitor.nextLine(); // Limpar o buffer
                     System.out.print("Nome: ");
                     String nome = leitor.nextLine();
                     System.out.print("Peso: ");
@@ -42,10 +39,11 @@ public class gestaoPaciente2 {
                     repositorio.adicionarPaciente(new Paciente(id, nome, peso, altura, sexo));
                     System.out.println("Paciente adicionado com sucesso!");
                     break;
+
                 case 2:
                     System.out.print("ID do Paciente para alterar: ");
                     int alterarId = leitor.nextInt();
-                    leitor.nextLine(); // Consome a nova linha
+                    leitor.nextLine(); // Limpar o buffer
                     System.out.print("Novo nome: ");
                     String novoNome = leitor.nextLine();
                     System.out.print("Novo Peso: ");
@@ -57,30 +55,36 @@ public class gestaoPaciente2 {
                     repositorio.alterarPaciente(alterarId, novoNome, novoPeso, novaAltura, novoSexo);
                     System.out.println("Paciente alterado com sucesso!");
                     break;
+
                 case 3:
                     System.out.print("ID do Paciente para excluir: ");
                     int idExcluir = leitor.nextInt();
                     repositorio.excluirPaciente(idExcluir);
                     System.out.println("Paciente excluído com sucesso!");
                     break;
+
                 case 4:
                     System.out.println("Lista de Pacientes:");
                     for (Paciente paciente : repositorio.listarPacientes()) {
                         System.out.println(paciente);
                     }
                     break;
+
                 case 5:
                     System.out.println("Salvando pacientes e saindo...");
-                    repositorio.salvarPacientes(); // Salva os pacientes no arquivo antes de sair no txt.
+                    repositorio.salvarPacientes(); // Salva os pacientes no arquivo antes de sair
                     break;
+
                 case 6:
                     System.out.println("Encerrando o Programa...");
                     break;
+
                 default:
                     System.out.println("Opção inválida.");
                     break;
             }
         } while (opcao != 6);
-        leitor.close(); 
+
+        leitor.close();
     }
 }
